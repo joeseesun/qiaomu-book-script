@@ -1,0 +1,38 @@
+{
+  "name": "qiaomu-book-script",
+  "version": "0.2.4",
+  "owner": "Qiaomu",
+  "updated_at": "2026-06-09",
+  "status": "published",
+  "maturity_tier": "production-lite",
+  "lifecycle_stage": "skill",
+  "context_budget_tier": "light",
+  "review_cadence": "monthly",
+  "target_platforms": [
+    "openai",
+    "claude",
+    "generic",
+    "agent-skills-compatible"
+  ],
+  "outputs": [
+    "complete-book-spoken-script",
+    "author-credibility-intro",
+    "branded-qiaomu-opening",
+    "natural-branded-closing",
+    "three-core-book-ideas",
+    "single-fenced-code-block",
+    "three-to-five-core-ideas",
+    "benchmark-style-author-contrast",
+    "user-tuned-qiaomu-voice-benchmark",
+    "micro-revision-learning-loop",
+    "business-tool-book-style-benchmark",
+    "step-by-step-book-reasoning",
+    "short-video-oral-copy",
+    "forbidden-expression-lint"
+  ],
+  "copyright": "Copyright (c) 向阳乔木",
+  "contacts": {
+    "x": "https://x.com/vista8",
+    "github": "https://github.com/joeseesun/"
+  }
+}

@@ -1,0 +1,24 @@
+interface:
+  display_name: "Qiaomu Book Script"
+  short_description: "Generate one complete Chinese spoken book-interpretation script with a sharp hook, 3-5 core ideas, 向阳乔木 opening, and natural closing."
+  default_prompt: "Use $qiaomu-book-script to generate one complete Chinese spoken script for a nonfiction book: author/book hook, why it is worth reading, 3-5 connected core ideas reasoned step by step, 向阳乔木 greeting, and natural closing."
+compatibility:
+  canonical_format: "agent-skills"
+  adapter_targets:
+    - "openai"
+    - "claude"
+    - "generic"
+  activation:
+    mode: "manual"
+    paths: []
+  execution:
+    context: "inline"
+    shell: "bash"
+  trust:
+    source_tier: "local"
+    remote_inline_execution: "forbid"
+    remote_metadata_policy: "allow-metadata-only"
+  degradation:
+    openai: "uses-model-knowledge-and-browsing-when-available-for-uncertain-book-facts"
+    claude: "uses-model-knowledge-and-states-uncertainty-when-needed"
+    generic: "uses-model-knowledge-and-states-uncertainty-when-needed"
